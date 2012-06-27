@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		099DA29815924F0000211D08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA29715924F0000211D08 /* UIKit.framework */; };
+		099DA29A15924F0000211D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA29915924F0000211D08 /* Foundation.framework */; };
+		099DA29C15924F0000211D08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA29B15924F0000211D08 /* CoreGraphics.framework */; };
+		099DA2A215924F0000211D08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 099DA2A015924F0000211D08 /* InfoPlist.strings */; };
+		099DA2A415924F0000211D08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 099DA2A315924F0000211D08 /* main.m */; };
+		099DA2A815924F0000211D08 /* KBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 099DA2A715924F0000211D08 /* KBAppDelegate.m */; };
+		099DA2AB15924F0000211D08 /* KBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099DA2AA15924F0000211D08 /* KBViewController.m */; };
+		099DA2AE15924F0000211D08 /* KBViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099DA2AC15924F0000211D08 /* KBViewController_iPhone.xib */; };
+		099DA2B115924F0000211D08 /* KBViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099DA2AF15924F0000211D08 /* KBViewController_iPad.xib */; };
+		099DA2B915924F0100211D08 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA2B815924F0100211D08 /* SenTestingKit.framework */; };
+		099DA2BA15924F0100211D08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA29715924F0000211D08 /* UIKit.framework */; };
+		099DA2BB15924F0100211D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA29915924F0000211D08 /* Foundation.framework */; };
+		099DA2C315924F0100211D08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 099DA2C115924F0100211D08 /* InfoPlist.strings */; };
+		099DA2C615924F0100211D08 /* KeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 099DA2C515924F0100211D08 /* KeyboardTests.m */; };
+		099DA2DC15924F1300211D08 /* tuner.pd in Resources */ = {isa = PBXBuildFile; fileRef = 099DA2DB15924F1300211D08 /* tuner.pd */; };
+		099DA2DF15924F5100211D08 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA2D815924F0C00211D08 /* libpd-ios.a */; };
+		099DA2E115924F5500211D08 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA2E015924F5500211D08 /* AudioToolbox.framework */; };
+		099DA2E315924F5800211D08 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DA2E215924F5800211D08 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		099DA2BC15924F0100211D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 099DA28A15924F0000211D08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 099DA29215924F0000211D08;
+			remoteInfo = Keyboard;
+		};
+		099DA2D715924F0C00211D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 099DA2CF15924F0B00211D08 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		099DA2D915924F0C00211D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 099DA2CF15924F0B00211D08 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		099DA2DD15924F4C00211D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 099DA2CF15924F0B00211D08 /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		099DA29315924F0000211D08 /* Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		099DA29715924F0000211D08 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		099DA29915924F0000211D08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		099DA29B15924F0000211D08 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		099DA29F15924F0000211D08 /* Keyboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Keyboard-Info.plist"; sourceTree = "<group>"; };
+		099DA2A115924F0000211D08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		099DA2A315924F0000211D08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		099DA2A515924F0000211D08 /* Keyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keyboard-Prefix.pch"; sourceTree = "<group>"; };
+		099DA2A615924F0000211D08 /* KBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBAppDelegate.h; sourceTree = "<group>"; };
+		099DA2A715924F0000211D08 /* KBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBAppDelegate.m; sourceTree = "<group>"; };
+		099DA2A915924F0000211D08 /* KBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBViewController.h; sourceTree = "<group>"; };
+		099DA2AA15924F0000211D08 /* KBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBViewController.m; sourceTree = "<group>"; };
+		099DA2AD15924F0000211D08 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KBViewController_iPhone.xib; sourceTree = "<group>"; };
+		099DA2B015924F0000211D08 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KBViewController_iPad.xib; sourceTree = "<group>"; };
+		099DA2B715924F0100211D08 /* KeyboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		099DA2B815924F0100211D08 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		099DA2C015924F0100211D08 /* KeyboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyboardTests-Info.plist"; sourceTree = "<group>"; };
+		099DA2C215924F0100211D08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		099DA2C415924F0100211D08 /* KeyboardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardTests.h; sourceTree = "<group>"; };
+		099DA2C515924F0100211D08 /* KeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardTests.m; sourceTree = "<group>"; };
+		099DA2CF15924F0B00211D08 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "../pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		099DA2DB15924F1300211D08 /* tuner.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tuner.pd; path = "../../pd-for-ios/Patches/tuner.pd"; sourceTree = "<group>"; };
+		099DA2E015924F5500211D08 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		099DA2E215924F5800211D08 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		099DA29015924F0000211D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DA2E315924F5800211D08 /* AVFoundation.framework in Frameworks */,
+				099DA2E115924F5500211D08 /* AudioToolbox.framework in Frameworks */,
+				099DA2DF15924F5100211D08 /* libpd-ios.a in Frameworks */,
+				099DA29815924F0000211D08 /* UIKit.framework in Frameworks */,
+				099DA29A15924F0000211D08 /* Foundation.framework in Frameworks */,
+				099DA29C15924F0000211D08 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		099DA2B315924F0100211D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DA2B915924F0100211D08 /* SenTestingKit.framework in Frameworks */,
+				099DA2BA15924F0100211D08 /* UIKit.framework in Frameworks */,
+				099DA2BB15924F0100211D08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		099DA28815924F0000211D08 = {
+			isa = PBXGroup;
+			children = (
+				099DA2CF15924F0B00211D08 /* libpd.xcodeproj */,
+				099DA29D15924F0000211D08 /* Keyboard */,
+				099DA2BE15924F0100211D08 /* KeyboardTests */,
+				099DA29615924F0000211D08 /* Frameworks */,
+				099DA29415924F0000211D08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		099DA29415924F0000211D08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				099DA29315924F0000211D08 /* Keyboard.app */,
+				099DA2B715924F0100211D08 /* KeyboardTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		099DA29615924F0000211D08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				099DA2E215924F5800211D08 /* AVFoundation.framework */,
+				099DA2E015924F5500211D08 /* AudioToolbox.framework */,
+				099DA29715924F0000211D08 /* UIKit.framework */,
+				099DA29915924F0000211D08 /* Foundation.framework */,
+				099DA29B15924F0000211D08 /* CoreGraphics.framework */,
+				099DA2B815924F0100211D08 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		099DA29D15924F0000211D08 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				099DA2A615924F0000211D08 /* KBAppDelegate.h */,
+				099DA2A715924F0000211D08 /* KBAppDelegate.m */,
+				099DA2A915924F0000211D08 /* KBViewController.h */,
+				099DA2AA15924F0000211D08 /* KBViewController.m */,
+				099DA2AC15924F0000211D08 /* KBViewController_iPhone.xib */,
+				099DA2AF15924F0000211D08 /* KBViewController_iPad.xib */,
+				099DA29E15924F0000211D08 /* Supporting Files */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		099DA29E15924F0000211D08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				099DA29F15924F0000211D08 /* Keyboard-Info.plist */,
+				099DA2A015924F0000211D08 /* InfoPlist.strings */,
+				099DA2A315924F0000211D08 /* main.m */,
+				099DA2A515924F0000211D08 /* Keyboard-Prefix.pch */,
+				099DA2DB15924F1300211D08 /* tuner.pd */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		099DA2BE15924F0100211D08 /* KeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				099DA2C415924F0100211D08 /* KeyboardTests.h */,
+				099DA2C515924F0100211D08 /* KeyboardTests.m */,
+				099DA2BF15924F0100211D08 /* Supporting Files */,
+			);
+			path = KeyboardTests;
+			sourceTree = "<group>";
+		};
+		099DA2BF15924F0100211D08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				099DA2C015924F0100211D08 /* KeyboardTests-Info.plist */,
+				099DA2C115924F0100211D08 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		099DA2D015924F0B00211D08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				099DA2D815924F0C00211D08 /* libpd-ios.a */,
+				099DA2DA15924F0C00211D08 /* libpd-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		099DA29215924F0000211D08 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 099DA2C915924F0100211D08 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				099DA28F15924F0000211D08 /* Sources */,
+				099DA29015924F0000211D08 /* Frameworks */,
+				099DA29115924F0000211D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				099DA2DE15924F4C00211D08 /* PBXTargetDependency */,
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = 099DA29315924F0000211D08 /* Keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		099DA2B615924F0100211D08 /* KeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 099DA2CC15924F0100211D08 /* Build configuration list for PBXNativeTarget "KeyboardTests" */;
+			buildPhases = (
+				099DA2B215924F0100211D08 /* Sources */,
+				099DA2B315924F0100211D08 /* Frameworks */,
+				099DA2B415924F0100211D08 /* Resources */,
+				099DA2B515924F0100211D08 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				099DA2BD15924F0100211D08 /* PBXTargetDependency */,
+			);
+			name = KeyboardTests;
+			productName = KeyboardTests;
+			productReference = 099DA2B715924F0100211D08 /* KeyboardTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		099DA28A15924F0000211D08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KB;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 099DA28D15924F0000211D08 /* Build configuration list for PBXProject "Keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 099DA28815924F0000211D08;
+			productRefGroup = 099DA29415924F0000211D08 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 099DA2D015924F0B00211D08 /* Products */;
+					ProjectRef = 099DA2CF15924F0B00211D08 /* libpd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				099DA29215924F0000211D08 /* Keyboard */,
+				099DA2B615924F0100211D08 /* KeyboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		099DA2D815924F0C00211D08 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = 099DA2D715924F0C00211D08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		099DA2DA15924F0C00211D08 /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = 099DA2D915924F0C00211D08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		099DA29115924F0000211D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DA2A215924F0000211D08 /* InfoPlist.strings in Resources */,
+				099DA2AE15924F0000211D08 /* KBViewController_iPhone.xib in Resources */,
+				099DA2B115924F0000211D08 /* KBViewController_iPad.xib in Resources */,
+				099DA2DC15924F1300211D08 /* tuner.pd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		099DA2B415924F0100211D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DA2C315924F0100211D08 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		099DA2B515924F0100211D08 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		099DA28F15924F0000211D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DA2A415924F0000211D08 /* main.m in Sources */,
+				099DA2A815924F0000211D08 /* KBAppDelegate.m in Sources */,
+				099DA2AB15924F0000211D08 /* KBViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		099DA2B215924F0100211D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DA2C615924F0100211D08 /* KeyboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		099DA2BD15924F0100211D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 099DA29215924F0000211D08 /* Keyboard */;
+			targetProxy = 099DA2BC15924F0100211D08 /* PBXContainerItemProxy */;
+		};
+		099DA2DE15924F4C00211D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = 099DA2DD15924F4C00211D08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		099DA2A015924F0000211D08 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				099DA2A115924F0000211D08 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		099DA2AC15924F0000211D08 /* KBViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				099DA2AD15924F0000211D08 /* en */,
+			);
+			name = KBViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		099DA2AF15924F0000211D08 /* KBViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				099DA2B015924F0000211D08 /* en */,
+			);
+			name = KBViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		099DA2C115924F0100211D08 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				099DA2C215924F0100211D08 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		099DA2C715924F0100211D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		099DA2C815924F0100211D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		099DA2CA15924F0100211D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Keyboard/Keyboard-Prefix.pch";
+				INFOPLIST_FILE = "Keyboard/Keyboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/mhargrove/Projects/pd-for-ios/libpd/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		099DA2CB15924F0100211D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Keyboard/Keyboard-Prefix.pch";
+				INFOPLIST_FILE = "Keyboard/Keyboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/mhargrove/Projects/pd-for-ios/libpd/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		099DA2CD15924F0100211D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Keyboard.app/Keyboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Keyboard/Keyboard-Prefix.pch";
+				INFOPLIST_FILE = "KeyboardTests/KeyboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		099DA2CE15924F0100211D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Keyboard.app/Keyboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Keyboard/Keyboard-Prefix.pch";
+				INFOPLIST_FILE = "KeyboardTests/KeyboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		099DA28D15924F0000211D08 /* Build configuration list for PBXProject "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				099DA2C715924F0100211D08 /* Debug */,
+				099DA2C815924F0100211D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		099DA2C915924F0100211D08 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				099DA2CA15924F0100211D08 /* Debug */,
+				099DA2CB15924F0100211D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		099DA2CC15924F0100211D08 /* Build configuration list for PBXNativeTarget "KeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				099DA2CD15924F0100211D08 /* Debug */,
+				099DA2CE15924F0100211D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 099DA28A15924F0000211D08 /* Project object */;
+}
